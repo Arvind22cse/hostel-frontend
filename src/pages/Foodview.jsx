@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import { usehostalstore } from '../store/hostal.js';
-import './FoodView.css';
+import './Foodview.css';
 
 function FoodView() {
     const { food, fetchfood } = usehostalstore();
