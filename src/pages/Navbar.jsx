@@ -30,7 +30,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <a href="/home" id='home'><h3 className="logo">Hostel Management</h3></a>
+            <a href="/home" id='home'><h3 className="logo">Hostel Utility Service</h3></a>
             <ul className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setIsMobile(false)}>
                 <li className='nav'><a href="/complaint">Complaint</a></li>
                 <li className='nav'><a href="/announcement">Announcement</a></li>

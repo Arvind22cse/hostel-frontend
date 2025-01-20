@@ -1,0 +1,78 @@
+/* General Styles */
+.student-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .student-header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .student-main {
+    padding: 2rem;
+  }
+  
+  /* Carousel Styles */
+  .carousel-section {
+    margin: 2rem auto;
+    width: 60%; /* Adjust the carousel width */
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .carousel-image {
+    flex: none;
+    width: 100%; /* Matches the container width */
+  }
+  
+  .carousel-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Footer Styles */
+  .student-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .student-footer h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .student-footer p {
+    margin: 0.5rem 0;
+  }
+  .imge{
+    width: 200px;
+    height: 300px;
+  }

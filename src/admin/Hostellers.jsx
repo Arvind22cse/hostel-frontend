@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './View_complaint.css';
+import './Hostellers.css';
 import Navbar from './Navbar';
 import { usehostalstore } from '../store/hostal.js';
 

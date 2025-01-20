@@ -17,7 +17,7 @@ function Announce() {
                 {ann.length > 0 ? (
                     ann.map((announce, index) => (
                         <div key={index} className="complaint-card">
-                            <p><strong>Announce:</strong> {announce.text}</p>
+                            <p><strong>Announcement:</strong> {announce.text}</p>
                     
                         </div>
                     ))

@@ -13,7 +13,7 @@ function Hostal() {
       <button type='sumbit'>Admin</button>
       </form><br />
       <form action="/signin">
-      <button type='sumbit'>Customer</button>
+      <button type='sumbit'>Student</button>
       </form>
     </div>
     </body>

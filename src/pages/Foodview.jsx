@@ -38,7 +38,7 @@ function FoodView() {
                                     <td>{foods.foodname}</td>
                                     <td>{new Date(foods.time).toLocaleString()}</td>
                                     <td>
-                                        <img src={foods.img} alt={foods.foodname} className="food-image" style={{width:"50px"}} />
+                                        <img src={foods.img} alt={foods.foodname} className="food-image" style={{width:"90px"}} />
                                     </td>
                                     {/* <td>
                                         <button

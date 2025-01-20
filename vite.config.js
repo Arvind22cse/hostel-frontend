@@ -7,7 +7,8 @@ export default defineConfig({
     server:{
      proxy:{
       "/api":{
-        target:"https://hostal-utility-service.onrender.com"
+        target:"http://localhost:5000"
+        // target:"https://hostal-utility-service.onrender.com"
        }
     }
     }

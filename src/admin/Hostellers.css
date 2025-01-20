@@ -1,0 +1,44 @@
+/* Container for the cards */
+.container {
+    display: flex;
+   
+    gap: 1rem;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  
+  /* Individual complaint cards */
+  .complaint-card {
+    background-color: #fff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 1.5rem;
+    width: 300px; /* Fixed width for consistent sizing */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Card title and text styling */
+  .complaint-card p {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: #333; /* Dark text for readability */
+  }
+  
+  .complaint-card p strong {
+    color: #4caf50; /* Highlight label names (like "Name", "Email") */
+    font-weight: bold;
+  }
+  
+  /* Hover effect */
+  .complaint-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  /* No students found message */
+  .container p {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  

@@ -25,14 +25,14 @@ const Navbar = () => {
 
     const logout = () => {
         setAccount([]); // Clear the accounts
-        window.location.href = "/signinadmin"; // Redirect to the home page or login page
+        window.location.href = "/"; // Redirect to the home page or login page
     };
 
     return (
         <nav className="navbar">
-            <h3 className="logo">ADMIN</h3>
+            <a href="/admin" id='home'><h3 className="logo">Admin</h3></a>
             <ul className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setIsMobile(false)}>
-            <li className='nav'><a href="/hostalstud">Hostellers</a></li>
+            <li className='nav' ><a href="/hostalstud">Hostellers</a></li>
                 <li className='nav'><a href="/announ">Announcement</a></li>
                 <li className='nav'><a href="/viewcomplaint">View complaints</a></li>
                 <li className='nav'><a href="/food">Food</a></li>
