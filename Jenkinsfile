@@ -5,13 +5,12 @@ pipeline {
         IMAGE_NAME = 'arvindm2004/hostel_frontend'
         TAG = 'latest'
         CONTAINER_NAME = 'vite-container'
-        DOCKER_HUB_CREDENTIALS = 'docker-hub-credentials' // set in Jenkins > Credentials
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Arvind22cse/hostel-frontend.git'  // 🔁 Replace with your GitHub repo
+                git branch: 'main', url: 'https://github.com/Arvind22cse/hostel-frontend.git'
             }
         }
 
@@ -30,12 +29,13 @@ pipeline {
             }
         }
 
-        stage('Push to Docker Hub') {
+         stage('Push to Docker Hub') {
             steps {
-                script {
-                    docker.withRegistry('https://index.docker.io/v1/', "${DOCKER_HUB_CREDENTIALS}") {
-                        docker.image("${IMAGE_NAME}:${TAG}").push()
-                    }
+                withCredentials([usernamePassword(credentialsId: 'docker_cred', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    sh '''
+                        echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+                        docker push ${IMAGE_NAME}:latest
+                    '''
                 }
             }
         }
