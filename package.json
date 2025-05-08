@@ -7,7 +7,7 @@
   "start": "npm install && react-scripts start",
   "test": "react-scripts test",
   "eject": "react-scripts eject",
-  "dev":"npm install && vite"
+"build": "vite build",  "dev":"npm install && vite"
 },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
