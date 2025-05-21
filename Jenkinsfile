@@ -58,6 +58,17 @@ pipeline {
                 """
             }
         }
+stage('Inspect Docker Image') {
+    steps {
+        sh 'docker run --rm ${IMAGE_NAME}:${TAG} cat /etc/nginx/conf.d/default.conf'
+    }
+}
+stage('Clean Old Docker Images') {
+    steps {
+        sh "docker image rm ${IMAGE_NAME}:${TAG} || true"
+    }
+}
+
     }
 
     post {
