@@ -29,7 +29,7 @@ function Food() {
             <Navbar />
             <form className='form'>
                 <div className="input-row">
-                    <label htmlFor="foodname">Foodname:</label>
+                    <label htmlFor="foodname">Food:</label>
                     <input
                         type="text"
                         name="foodname"
