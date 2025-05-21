@@ -33,7 +33,7 @@ const Navbar = () => {
             <a href="/admin" id='home'><h3 className="logo">Admin</h3></a>
             <ul className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setIsMobile(false)}>
             <li className='nav' ><a href="/hostalstud">Hostellers</a></li>
-                <li className='nav'><a href="/announ">Announcement</a></li>
+                <li className='nav'><a href="/announ">Announce</a></li>
                 <li className='nav'><a href="/viewcomplaint">View complaints</a></li>
                 <li className='nav'><a href="/food">Food</a></li>
                 <li>
