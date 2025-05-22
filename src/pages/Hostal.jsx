@@ -10,7 +10,7 @@ function Hostal() {
       <h1 className='head2'>Login As</h1><br />
       
       <form action="/signinadmin">
-      <button type='sumbit'>ARAVIND</button>
+      <button type='sumbit'>ADMIN</button>
       </form><br />
       <form action="/signin">
       <button type='sumbit'>Student</button>
