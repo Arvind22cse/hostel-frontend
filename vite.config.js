@@ -7,7 +7,7 @@ export default defineConfig({
     server:{
      proxy:{
       "/api":{
-        target:"https://hostel-frontend-c11s-git-main-arvinds-projects-ee9711f7.vercel.app/"
+        target:"http://localhost:5000"
         // target:"https://hostal-utility-service.onrender.com"
        }
     }
