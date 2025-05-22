@@ -39,7 +39,7 @@ const StudentPage = () => {
       </main>
       <footer className="student-footer">
         <h3>Warden Details</h3>
-        <p>Name:Arvind</p>
+        <p>:Arvind</p>
         <p>Phone: +91 9876543210</p>
         <p>Email: arvindmurugesan001@gmail.com</p>
       </footer>
