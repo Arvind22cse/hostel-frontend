@@ -63,7 +63,7 @@ const WardenPage = () => {
 
           {/* Services Section */}
           <section className="services-section">
-            <h2>Service Contacts</h2>
+            <h2>Contacts</h2>
             <div className="services">
               {services.map((service, index) => (
                 <div key={index} className="service-card">
