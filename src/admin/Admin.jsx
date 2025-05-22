@@ -21,7 +21,7 @@ const WardenPage = () => {
       email: "cleaning@hostel.com",
     },
     {
-      title: "Electrical Repairs",
+      title: "Electrical",
       phone: "+91 7654321098",
       email: "electrical@hostel.com",
     },
