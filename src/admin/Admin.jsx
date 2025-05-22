@@ -32,7 +32,7 @@ const WardenPage = () => {
       <Navbar />
       <div className="warden-page">
         <header className="warden-header">
-          <h1>WELCOME</h1>
+          <h1>WELCOME ADMIN</h1>
         </header>
         <main className="warden-main">
           {/* Carousel Section */}
