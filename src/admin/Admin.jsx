@@ -11,7 +11,7 @@ import {
 const WardenPage = () => {
   const services = [
     {
-      title: "Maintenance Requests",
+      title: "Maenance Requests",
       phone: "+91 9876543210",
       email: "maintenance@hostel.com",
     },
